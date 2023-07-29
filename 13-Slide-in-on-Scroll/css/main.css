@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #fff;
+}
+body section {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+body article {
+  width: 80%;
+  max-width: 800px;
+  font-size: 1.2rem;
+  text-indent: 2rem;
+}
+body article h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+body article p {
+  text-align: justify;
+  line-height: 1.5rem;
+}
+body article img {
+  margin: 1rem;
+  width: 400px;
+  float: right;
+  box-shadow: 0px 0px 10px rgb(132, 0, 255);
+  border-radius: 0.3rem;
+}
+body .slide-in {
+  opacity: 0.2;
+  transition: all 0.5s;
+}
+body .slide-left {
+  float: left;
+  transform: translateX(-40%) scale(0.95);
+}
+body .slide-right {
+  float: right;
+  transform: translateX(40%) scale(0.95);
+}
+body .active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+body #section-1 {
+  font-size: 3.2rem;
+  text-shadow: 3px 3px rgb(132, 0, 255);
+}/*# sourceMappingURL=main.css.map */
