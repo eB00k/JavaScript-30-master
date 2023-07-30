@@ -35,22 +35,56 @@ body article img {
   border-radius: 0.3rem;
 }
 body .slide-in {
-  opacity: 0.2;
+  opacity: 0;
   transition: all 0.5s;
+  pointer-events: none;
 }
 body .slide-left {
   float: left;
-  transform: translateX(-40%) scale(0.95);
+  transform: translateX(-30%) scale(0.95);
 }
 body .slide-right {
   float: right;
-  transform: translateX(40%) scale(0.95);
+  transform: translateX(30%) scale(0.95);
 }
 body .active {
   opacity: 1;
   transform: translateX(0) scale(1);
+  pointer-events: all;
 }
 body #section-1 {
   font-size: 3.2rem;
   text-shadow: 3px 3px rgb(132, 0, 255);
+}
+body #section-4 {
+  display: flex;
+  gap: 2rem;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body #section-4 .feedback {
+  width: 280px;
+  background-color: rgba(34, 34, 34, 0.7960784314);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+body #section-4 .feedback img {
+  width: 250px;
+  border-radius: 1rem;
+}
+body #section-4 .feedback:nth-child(1) {
+  transition-delay: 200ms;
+}
+body #section-4 .feedback:nth-child(2) {
+  transition-delay: 400ms;
+}
+body #section-4 .feedback:nth-child(3) {
+  transition-delay: 600ms;
 }/*# sourceMappingURL=main.css.map */
